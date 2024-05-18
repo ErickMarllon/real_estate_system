@@ -1,6 +1,6 @@
-import FormatPhoneNumber from '@/app/functions/FormatPhoneNumber';
 import Button from '@/components/Button';
 import Input from '@/components/Input';
+import FormatPhoneNumber from '@/functions/FormatPhoneNumber';
 import { useHandleInputChange } from '@/hooks/useHandleInputChange';
 import { IoLogoWhatsapp } from 'react-icons/io5';
 const initialData = {

@@ -1,4 +1,4 @@
-import { FC, InputHTMLAttributes, RefObject } from 'react';
+import { FC, InputHTMLAttributes } from 'react';
 
 interface Props extends InputHTMLAttributes<HTMLInputElement> {
   // passar as props caso necessário
@@ -12,7 +12,6 @@ interface Props extends InputHTMLAttributes<HTMLInputElement> {
   // success?: boolean;
   // disabled?: boolean;
   // hidden?: boolean;
-  ref?: RefObject<HTMLInputElement>;
 }
 const Input: FC<Props> = ({ ...props }) => {
   return <input name={props.id} {...props} />;

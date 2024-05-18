@@ -3,9 +3,9 @@
 import Pagination from '@/components/Pagination';
 import PropertyList from '@/components/PropertyList';
 import useSeparateByQuantity from '@/hooks/useSeparateByQuantity';
+import listPropertiesData from '@/mocks/listPropertiesMock.json';
 import { useRouter } from 'next/navigation';
 import { useEffect, useRef } from 'react';
-import listPropertiesData from '../../../Mocks/listPropertiesMock.json';
 
 export default function DynamicPage({ params }: { params: { slug: string } }) {
   const { push } = useRouter();

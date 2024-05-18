@@ -1,7 +1,7 @@
-import cities from '@/Mocks/searchCityListMock.json';
-import neighborhood from '@/Mocks/searchNeighborhoodsMock.json';
-import propertyType from '@/Mocks/searchPropertyTypeMock.json';
 import { useHandleInputChange } from '@/hooks/useHandleInputChange';
+import cities from '@/mocks/searchCityListMock.json';
+import neighborhood from '@/mocks/searchNeighborhoodsMock.json';
+import propertyType from '@/mocks/searchPropertyTypeMock.json';
 import React from 'react';
 import { TbHomeSearch } from 'react-icons/tb';
 import MultiRangeSlider from '../Components/MultiRangeSlider';

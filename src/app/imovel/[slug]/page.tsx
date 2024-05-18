@@ -1,7 +1,7 @@
 'use client';
 
 import CurrencyFormatter from '@/app/functions/CurrencyFormatter';
-import listPropertiesData from '../../../Mocks/listPropertiesMock.json';
+import listPropertiesData from '@/mocks/listPropertiesMock.json';
 import CondominiumFeatures from '../components/CondominiumFeatures';
 import PropertyFeatures from '../components/FeaturesProperty';
 import FeaturesPropertyBasic from '../components/FeaturesPropertyBasic';

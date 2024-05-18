@@ -2,8 +2,8 @@
 import Pagination from '@/components/Pagination';
 import PropertyList from '@/components/PropertyList';
 import useSeparateByQuantity from '@/hooks/useSeparateByQuantity';
+import listPropertiesData from '@/mocks/listPropertiesMock.json';
 import { useEffect, useRef } from 'react';
-import listPropertiesData from '../../Mocks/listPropertiesMock.json';
 export default function Imoveis() {
   const { currentData, setCurrentPage, currentPage, totalNumberLists } =
     useSeparateByQuantity({

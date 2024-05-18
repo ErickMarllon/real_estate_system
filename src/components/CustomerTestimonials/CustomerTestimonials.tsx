@@ -1,5 +1,5 @@
-import CustomerTestimonialsMock from '@/Mocks/CustomerTestimonialsMock.json';
 import useCarouselNavigation from '@/hooks/useCarouselNavigation';
+import CustomerTestimonialsMock from '@/mocks/CustomerTestimonialsMock.json';
 import Image from 'next/image';
 import { FC, useEffect } from 'react';
 import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';

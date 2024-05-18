@@ -1,7 +1,7 @@
 'use client';
 import img from '@/assets/banner_privacy_policy.jpg';
 
-import privacyPolicyMockData from '@/Mocks/PrivacyPolicyMock.json';
+import privacyPolicyMockData from '@/mocks/PrivacyPolicyMock.json';
 import Image from 'next/image';
 export default function PrivacyPolicy() {
   return (

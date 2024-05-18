@@ -1,6 +1,6 @@
 import useCarouselNavigation from '@/hooks/useCarouselNavigation';
+import listPropertiesData from '@/mocks/listPropertiesMock.json';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
-import listPropertiesData from '../../Mocks/listPropertiesMock.json';
 import Button from '../Button';
 import PropertyCard from '../PropertyCard';
 

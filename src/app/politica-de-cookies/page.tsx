@@ -1,7 +1,7 @@
 'use client';
 import img from '@/assets/banner_cookie_policy.jpg';
 
-import privacyPolicyMockData from '@/Mocks/cookiesPolicyMock.json';
+import privacyPolicyMockData from '@/mocks/cookiesPolicyMock.json';
 import Image from 'next/image';
 export default function CookiesPolicy() {
   return (

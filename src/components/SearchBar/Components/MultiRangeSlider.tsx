@@ -1,5 +1,4 @@
 import CurrencyFormatter from '@/app/functions/CurrencyFormatter';
-import Input from '@/components/Input';
 import { ChangeEvent, FC, useEffect, useRef, useState } from 'react';
 
 interface MultiRangeSliderProps {
@@ -48,7 +47,7 @@ const MultiRangeSlider: FC<MultiRangeSliderProps> = ({
       <p className="block font-semibold text-zinc-800/90 ">Preço</p>
       <div className="flex items-center justify-center mt-2">
         <label htmlFor="priceMin" className="hidden" />
-        <Input
+        <input
           type="range"
           id="priceMin"
           name="priceMin"
@@ -61,7 +60,7 @@ const MultiRangeSlider: FC<MultiRangeSliderProps> = ({
           className="thumb"
         />
         <label htmlFor="priceMax" className="hidden" />
-        <Input
+        <input
           type="range"
           id="priceMax"
           name="priceMax"

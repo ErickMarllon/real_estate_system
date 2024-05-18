@@ -1,0 +1,5 @@
+{
+  "extends": "next/core-web-vitals",
+  "stylelint.enable": true,
+  "css.validate": false
+}

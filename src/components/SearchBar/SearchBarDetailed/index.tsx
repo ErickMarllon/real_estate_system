@@ -1,7 +1,8 @@
 import { useHandleInputChange } from '@/hooks/useHandleInputChange';
-import cities from '@/mocks/searchCityListMock.json';
-import neighborhood from '@/mocks/searchNeighborhoodsMock.json';
-import propertyType from '@/mocks/searchPropertyTypeMock.json';
+import searchCityListMock from '@/mocks/searchCityListMock';
+import searchNeighborhoodsMock from '@/mocks/searchNeighborhoodsMock';
+
+import searchPropertyTypeMock from '@/mocks/searchPropertyTypeMock';
 import React from 'react';
 import { TbHomeSearch } from 'react-icons/tb';
 import MultiRangeSlider from '../Components/MultiRangeSlider';
@@ -36,7 +37,9 @@ const SearchBarDetailed: React.FC<IProps> = ({ ...props }) => {
 
   const neighborhoodsList =
     formData.city !== '' &&
-    neighborhood[formData.city as keyof typeof neighborhood];
+    searchNeighborhoodsMock[
+      formData.city as keyof typeof searchNeighborhoodsMock
+    ];
 
   return (
     <form className="bg-white w-full space-y-2 rounded-3xl flex justify-center items-center flex-col p-4">
@@ -45,7 +48,7 @@ const SearchBarDetailed: React.FC<IProps> = ({ ...props }) => {
           label="Tipo de Imóvel"
           id="propertyType"
           name="propertyType"
-          options={propertyType.map((el) => ({
+          options={searchPropertyTypeMock.map((el) => ({
             value: el.name,
             label: el.name,
           }))}
@@ -55,7 +58,7 @@ const SearchBarDetailed: React.FC<IProps> = ({ ...props }) => {
           label="Cidade"
           id="city"
           name="city"
-          options={cities.map((el) => ({
+          options={searchCityListMock.map((el) => ({
             value: el.abbreviation,
             label: el.name,
           }))}

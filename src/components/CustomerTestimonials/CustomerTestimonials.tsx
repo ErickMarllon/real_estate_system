@@ -1,16 +1,16 @@
 import useCarouselNavigation from '@/hooks/useCarouselNavigation';
-import CustomerTestimonialsMock from '@/mocks/CustomerTestimonialsMock.json';
+import customerTestimonialsMock from '@/mocks/customerTestimonialsMock';
 import Image from 'next/image';
 import { FC, useEffect } from 'react';
 import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 import Button from '../Button';
 const CustomerTestimonials: FC = () => {
-  const totalItens = CustomerTestimonialsMock.length;
+  const totalItens = customerTestimonialsMock.length;
   const { carouselRef, currentItem, handleCurrentClick } =
     useCarouselNavigation();
 
   useEffect(() => {
-    const totalItens = CustomerTestimonialsMock.length;
+    const totalItens = customerTestimonialsMock.length;
 
     const interval = setInterval(() => {
       handleCurrentClick(
@@ -19,7 +19,7 @@ const CustomerTestimonials: FC = () => {
     }, 12000);
 
     return () => clearInterval(interval);
-  }, [CustomerTestimonialsMock, currentItem]);
+  }, [customerTestimonialsMock, currentItem]);
 
   return (
     <section className="bg-gradient-blue py-10 w-full justify-center items-center flex flex-col">
@@ -30,8 +30,8 @@ const CustomerTestimonials: FC = () => {
         className="flex h-[300px] w-full  overflow-hidden items-center scroll-smooth"
         ref={carouselRef}
       >
-        {CustomerTestimonialsMock &&
-          CustomerTestimonialsMock.map((cTestimony) => (
+        {customerTestimonialsMock &&
+          customerTestimonialsMock.map((cTestimony) => (
             <div
               key={cTestimony.id}
               className="min-w-full flex justify-center items-center "

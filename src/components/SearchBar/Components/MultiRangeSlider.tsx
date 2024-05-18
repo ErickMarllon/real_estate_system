@@ -1,4 +1,4 @@
-import CurrencyFormatter from '@/app/functions/CurrencyFormatter';
+import CurrencyFormatter from '@/functions/CurrencyFormatter';
 import { ChangeEvent, FC, useEffect, useRef, useState } from 'react';
 
 interface MultiRangeSliderProps {

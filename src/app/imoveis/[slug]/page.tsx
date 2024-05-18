@@ -3,7 +3,7 @@
 import Pagination from '@/components/Pagination';
 import PropertyList from '@/components/PropertyList';
 import useSeparateByQuantity from '@/hooks/useSeparateByQuantity';
-import listPropertiesData from '@/mocks/listPropertiesMock.json';
+import listPropertiesData from '@/mocks/listPropertiesMock';
 import { useRouter } from 'next/navigation';
 import { useEffect, useRef } from 'react';
 

@@ -1,7 +1,7 @@
 'use client';
 import img from '@/assets/banner_privacy_policy.jpg';
 
-import privacyPolicyMockData from '@/mocks/PrivacyPolicyMock.json';
+import privacyPolicyMock from '@/mocks/privacyPolicyMock';
 import Image from 'next/image';
 export default function PrivacyPolicy() {
   return (
@@ -36,13 +36,13 @@ export default function PrivacyPolicy() {
       <section className="flex flex-col px-8 w-full">
         <div className="w-full lg:w-1/2 space-y-4">
           <div className="space-y-4">
-            <h2>{privacyPolicyMockData.title}</h2>
-            {privacyPolicyMockData.summary?.map((paragraph, index) => (
+            <h2>{privacyPolicyMock.title}</h2>
+            {privacyPolicyMock.summary?.map((paragraph, index) => (
               <p key={index}>{paragraph}</p>
             ))}
 
             <ol className="space-y-4">
-              {privacyPolicyMockData.sections.map((section) => (
+              {privacyPolicyMock.sections.map((section) => (
                 <li key={section.id}>
                   <h4>
                     <span>{section.id}</span>
@@ -100,7 +100,7 @@ export default function PrivacyPolicy() {
 
           <p>
             <strong>Última atualização:</strong>
-            {privacyPolicyMockData.update_date}
+            {privacyPolicyMock.update_date}
           </p>
         </div>
       </section>

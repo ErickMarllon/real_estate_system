@@ -2,12 +2,12 @@
 import Pagination from '@/components/Pagination';
 import PropertyList from '@/components/PropertyList';
 import useSeparateByQuantity from '@/hooks/useSeparateByQuantity';
-import listPropertiesData from '@/mocks/listPropertiesMock.json';
+import listPropertiesMock from '@/mocks/listPropertiesMock';
 import { useEffect, useRef } from 'react';
 export default function Imoveis() {
   const { currentData, setCurrentPage, currentPage, totalNumberLists } =
     useSeparateByQuantity({
-      data: listPropertiesData,
+      data: listPropertiesMock,
     });
 
   const propertiesRef = useRef<HTMLDivElement>(null);

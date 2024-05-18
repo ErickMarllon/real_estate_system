@@ -1,7 +1,7 @@
 'use client';
 import img from '@/assets/banner_cookie_policy.jpg';
+import cookiesPolicyMock from '@/mocks/cookiesPolicyMock';
 
-import privacyPolicyMockData from '@/mocks/cookiesPolicyMock.json';
 import Image from 'next/image';
 export default function CookiesPolicy() {
   return (
@@ -30,13 +30,13 @@ export default function CookiesPolicy() {
       <section className="flex flex-col px-8 w-full">
         <div className="w-full lg:w-1/2 space-y-4">
           <div className="space-y-4">
-            <h2>{privacyPolicyMockData.title}</h2>
-            {privacyPolicyMockData.summary?.map((paragraph, index) => (
+            <h2>{cookiesPolicyMock.title}</h2>
+            {cookiesPolicyMock.summary?.map((paragraph, index) => (
               <p key={index}>{paragraph}</p>
             ))}
 
             <ol className="space-y-4">
-              {privacyPolicyMockData.sections.map((section) => (
+              {cookiesPolicyMock.sections.map((section) => (
                 <li key={section.id}>
                   <h4>
                     <span>{section.id}</span>
@@ -66,7 +66,7 @@ export default function CookiesPolicy() {
 
           <p>
             <strong>Última atualização:</strong>
-            {privacyPolicyMockData.update_date}
+            {cookiesPolicyMock.update_date}
           </p>
         </div>
       </section>

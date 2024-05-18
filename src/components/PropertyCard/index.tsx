@@ -4,7 +4,7 @@ import icon_buildingArea from '@/assets/icons/propertyFeaturesBasic/icon_buildin
 import icon_garagesSpaces from '@/assets/icons/propertyFeaturesBasic/icon_garagesSpaces.svg';
 import useCarouselNavigation from '@/hooks/useCarouselNavigation';
 
-import CurrencyFormatter from '@/app/functions/CurrencyFormatter';
+import CurrencyFormatter from '@/functions/CurrencyFormatter';
 import { IPropertyCardProps } from '@/interfaces/IProperties';
 import Image from 'next/image';
 import Link from 'next/link';

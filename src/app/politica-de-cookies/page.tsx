@@ -1,8 +1,8 @@
 'use client';
 import img from '@/assets/banner_cookie_policy.jpg';
 
+import privacyPolicyMockData from '@/Mocks/cookiesPolicyMock.json';
 import Image from 'next/image';
-import privacyPolicyMockData from '../../Mocks/cookiesPolicyMock.json';
 export default function CookiesPolicy() {
   return (
     <main className="policy bg-blue-50 min-h-screen py-[10dvh] relative">

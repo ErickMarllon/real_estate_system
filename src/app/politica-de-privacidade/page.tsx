@@ -1,8 +1,8 @@
 'use client';
 import img from '@/assets/banner_privacy_policy.jpg';
 
+import privacyPolicyMockData from '@/Mocks/PrivacyPolicyMock.json';
 import Image from 'next/image';
-import privacyPolicyMockData from '../../Mocks/PrivacyPolicyMock.json';
 export default function PrivacyPolicy() {
   return (
     <main className="policy bg-blue-50 min-h-screen py-[10dvh] relative">

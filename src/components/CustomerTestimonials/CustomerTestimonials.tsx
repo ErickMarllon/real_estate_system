@@ -1,8 +1,8 @@
+import CustomerTestimonialsMock from '@/Mocks/CustomerTestimonialsMock.json';
 import useCarouselNavigation from '@/hooks/useCarouselNavigation';
 import Image from 'next/image';
 import { FC, useEffect } from 'react';
 import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
-import CustomerTestimonialsMock from '../../Mocks/CustomerTestimonialsMock.json';
 import Button from '../Button';
 const CustomerTestimonials: FC = () => {
   const totalItens = CustomerTestimonialsMock.length;
